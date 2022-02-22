@@ -7,6 +7,7 @@ Django auth system for user and system login.
 Make sure you have python 3.9 installed locally
 
 $ git clone https://github.com/samAricha/django_auth.git
+
 $ cd auth_system
 
 $ pip install -r requirements.txt
