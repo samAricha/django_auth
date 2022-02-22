@@ -1,13 +1,17 @@
 # django auth system
 
-Foobar is a Python library for dealing with word pluralization.
+Django auth system for user and system login.
 
-## Installation
+## Running locally
 
-Use the package manager [pip](https://pip.pypa.io/en/stable/) to install foobar.
+Make sure you have python 3.9 installed locally
 
-```bash
-pip install foobar
+$ git clone https://github.com/samAricha/django_auth.git
+$ cd auth_system
+
+$ pip install -r requirements.txt
+
+$ python manage.py migrate
 ```
 
 ## Usage
