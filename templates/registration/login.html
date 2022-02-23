@@ -5,6 +5,7 @@
 {% block title %}Login{% endblock %}
 
 {% block content %}
+<<<<<<< HEAD
 <div class="row justify-content-center">
   <div class="col-6">
     <div class="card">
@@ -20,4 +21,12 @@
     </div>
   </div>
 </div>
+=======
+<h2>Log In</h2>
+<form method="post">
+  {% csrf_token %}
+  {{ form.as_p }}
+  <button type="Submit">Log In</button>
+</form>
+>>>>>>> d138e12cf1f1cd7575580ad446b0338fdfc462db
 {% endblock %}
