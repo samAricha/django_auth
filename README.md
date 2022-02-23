@@ -16,7 +16,7 @@ Make sure you have python 3.9 installed locally
 ```bash
 $ git clone https://github.com/samAricha/django_auth.git
 
-$ cd auth_system
+$ cd django_auth
 
 $ pip install -r requirements.txt
 
