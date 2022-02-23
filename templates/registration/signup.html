@@ -1,13 +1,29 @@
 <!-- templates/registration/signup.html -->
-{% extends 'registration/base.html' %}
+<h1>Sign Up Below</h1>
+<style>
+h5{
 
-{% block title %}Sign Up{% endblock %}
+  color: red;
 
-{% block content %}
-  <h2>Sign up</h2>
-  <form method="post">
-    {% csrf_token %}
-    {{ form.as_p }}
-    <button type="submit">Sign Up</button>
-  </form>
-{% endblock %}
+}
+</style>
+
+{%for message in messages %}
+<h5>{{message}}<h5/>
+{% endfor %}
+
+
+<form method="POST" action="register">
+  {%csrf_token %}
+
+  <p>Username :</p>
+  <input type="text" name="username"/>
+  <p>Email :</p>
+  <input type="email" name="email"/>
+  <p>Password :</p>
+  <input type="password" name="password"/>
+  <p>Repeat Password :</p>
+  <input type="password" name="password2"/>
+  <input type="submit"  />
+  
+</form
